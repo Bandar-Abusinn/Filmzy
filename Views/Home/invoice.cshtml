@@ -1,0 +1,130 @@
+﻿@model Filmzy.Models.details
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+
+    <link rel="stylesheet" href="css/mdb.min.css" />
+</head>
+
+<header>
+
+    <div class="p-3 text-center bg-white border-bottom">
+        <div class="container">
+            <div class="row gy-3">
+
+
+
+                <div class="col-md-2">
+                    <img class="d-none d-md-flex" src="~/css/logo.png" width="200">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bg-primary">
+        <div class="container py-4">
+        </div>
+    </div>
+
+</header>
+
+
+
+<div class="col-xl-4 col-lg-4 d-flex justify-content-center justify-content-lg-end">
+    <div class="ms-lg-4 mt-4 mt-lg-0" style="max-width:1500px;">
+        <h6 class="mb-3">Summary</h6>
+        <div class="d-flex justify-content-between">
+            <p class="mb-2">Total price:</p>
+            <p class="mb-2">@Model.product.price</p>
+        </div>
+        <div class="d-flex justify-content-between">
+            <p class="mb-2">Shipping cost:</p>
+            <p class="mb-2">+ Free (Code)</p>
+        </div>
+        <hr />
+        <div class="d-flex justify-content-between">
+            <p class="mb-2">Total price:</p>
+            <p class="mb-2 fw-bold">@Model.product.price</p>
+        </div>
+
+
+
+        <hr />
+        <h6 class="text-dark my-4">Items in cart</h6>
+
+        <div class="d-flex align-items-center mb-4">
+            <div class="me-3 position-relative">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill badge-secondary">
+                    1
+                </span>
+                <img src="@Model.product.image" style="height: 96px; width: 96x;" class="img-sm rounded border" />
+            </div>
+            <div class="">
+                <a href="#" class="nav-link">
+                    @Model.product.Name
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="text-center text-lg-start text-muted bg-primary mt-3">
+
+    <section class="">
+        <div class="container text-center text-md-start pt-4 pb-4">
+
+            <div class="row mt-3">
+
+                <div class="col-12 col-lg-3 col-sm-12 mb-2">
+
+                    <img class="d-none d-md-flex" src="~/css/logo.png" width="50">
+                    <p class="mt-1 text-white">
+                        © 2023 Copyright: Filmzy.com
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="">
+        <div class="container">
+            <div class="d-flex justify-content-between py-4 border-top">
+                <div>
+                    <i class="fab fa-lg fa-cc-visa text-white"></i>
+                    <i class="fab fa-lg fa-cc-amex text-white"></i>
+                    <i class="fab fa-lg fa-cc-mastercard text-white"></i>
+                    <i class="fab fa-lg fa-cc-paypal text-white"></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script type="text/javascript"></script>
+</html>
